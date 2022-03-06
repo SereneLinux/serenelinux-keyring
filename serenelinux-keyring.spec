@@ -1,5 +1,5 @@
 Name:           serenelinux-keyring
-Version:        0.0.2
+Version:        0.0.3
 Release:        0
 Summary:        SereneFedora gpg Keyring
 
@@ -24,6 +24,38 @@ rm -rf rm -rf $RPM_BUILD_ROOT
 
 #GPG Key
 mkdir -p %{buildroot}/etc/pki/rpm-gpg/
+
+cat <<EOF > %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-kahenteikou
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQINBGIlOdUBEACxoxfPKgSFeLfNOwjPtqwa83Q9BlQXDD1zfbzBiRaoOZNotFZ/
+36PQt6F1z7xpbrLWRCBt48ler7f6zXCchwIh/wBZzgmHtZr5qsN3Xk5wY0Pd5ISi
+/DPbKq//IRbdgJOy8E6da/a2F8DUboiL4k6AzX6XjdoLDPTLCsu+aOgb/Z02Cg4x
+0F/yi2unvBqZsUiGnAfxPNUGNOsl7Mmk4x3h2+We83m0s8/W3c+C0a8QD6dkFDkc
+wKvSwmQGPi2NpSI68VrDyVJeEdRaBVXI7wvJTDxFC899dnKgQUvY3rk8e7fsPIbt
+w9g14CexRelccoj1esnETg9BlXZ1In+8af+8mon8KWcjZiWA62KoEScS8HxxqL6p
+S1p5Ji7YWC+mkOmaqR1INOs60+JxXPmpt0mFu/XVG+O/Yo9WFwWp8NjjgehbtJie
+bOVc7rDDYdbpROJmm4DsKgrz7UnYEldXSl1qnqbxw9f9pk04un4iXlnPvf1y9N2q
+RexQgIrb3zqtH2QX7xTLvKW2hE5Qpg92YGqUOSbZ30qmC7FQExi1/1CpkAOlKETr
+oUcOdxM2bl2q9Shk2pvldvqWHHEX5vjjssdHwHbMKIZxSOYeXfOAnHIzO6SpEPL5
+iJnellosK8h/kLX5z3RL4bwcPCo8YkOT2Hj3zrdP0KrgbvPjmOwDQYyjZwARAQAB
+tDJrYWhlbnRlaWtvdSAocnBtIHN5b21laSkgPGtva2tpZW1vdXNlQGZhc2NvZGUu
+bmV0PokCUgQTAQgAPBYhBK/mb8kKYveAlAbyQM8yPI2iWAQcBQJiJTnVAhsDBQsJ
+CAcCAyICAQYVCgkICwIEFgIDAQIeBwIXgAAKCRDPMjyNolgEHP3sEACBFq47E6V/
+fZAQlnKnp+tuIAWWi93awL2ulvwM3ucHbMIPsPhvOrPL/i9b2xWEK87Ituv5X0Bm
+hXGsdjTwYwoE1P3sTdoIVLK3j5KxrzqY9zjjVCZSHMkH/DgvwGJniotRRZs2mtOT
+sFqNI13/CXCEsJKJcb5Zo4rkPLpQjp7VnFU/D9e6Kpy9oPJsF58CQSirmoNr8Aop
+/ABjtxCpqeZA8/vOTbHGpAaLIytzuwY7Dow684C/IEAbecsSl6uPg3sZb04FA386
+xOmrco2BlUFdExAL3M6XNyM1DruYkE5BVpbHX+gTIG+PzFC5/xWOrHxjuAxYZhxA
+t1G+wMuYq26Uh7ilFm9r88Ki+YpcOPxVRdyq905neGmmemqCrWaBQ4Lh6P0lJXFQ
+zRD9eV+YxyNwqt/D/DVz2TJ/iqu+Fi6Sol7qiFm34kpXJIdpytokmx7U6TLrbm2V
+Z6Z/0aXguZPSdDrE/l723amQR51C0eQ876ymmX6oZ2epsO9n0XgTLC8Ny/hOnpJb
+uIaBIl9MRCMveou4rNkFcD7gniV59n4JTndJNKaWemkCtBu6nX+WULIKo4fcvlnv
+Po0JyGf5sZ5Ou2yHS4erO1eFnvE8+lyggBz0KUZiWSCoNrqE4ojz74xx6I7QOtsS
+KgAm4wGfqzWFlKXlmurAhkV5/xRPqkG4dg==
+=6LAp
+-----END PGP PUBLIC KEY BLOCK-----
+EOF
 cat <<EOF > %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-kokkiemouse
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
